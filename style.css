@@ -1,0 +1,185 @@
+/*:root{}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Georgia', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	color: white;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none; /* Safari */
+   /* -ms-user-select: none; /* IE 10 and IE 11 */
+    /* user-select: none; /* Standard syntax */
+     
+/*}*/
+.html {
+  scroll-behavior: smooth;
+}
+/*.header {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 15px;
+	top: 30px;
+	text-align: justify;
+}*/
+.header {
+	-webkit-tap-highlight-color: transparent;
+	color: #000000;
+	padding: 10px;
+	text-align: justify;
+  }
+.header img{
+	border-radius: 50%;
+	max-width: 200px;
+	max-height: 200px;
+	box-shadow: 0 3px 10px rgb(0, 0, 0);
+    overflow: hidden;
+    border-left: 1px solid  rgba(87, 85, 85, 0.404);
+    margin-bottom: 12px;
+}
+.header h1{
+	font-size: 30px;
+	color: rgba(107, 104, 104, 0.979);
+}
+.header h3{
+	font-size: 15px;
+	color: rgba(107, 104, 104, 0.979);
+}
+
+.wrapper {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	margin-bottom: 5px;
+	max-width: 300px;
+	box-shadow: 0 3px 6px rgba(255, 255, 255, 0.5);
+	border-left: 1px solid  rgba(255, 255, 255, 0.5);
+	border-radius: 15px;
+}
+.wrapper nav{
+	display: block;
+	margin-bottom: 5px;
+	max-width: 300px;
+	align-items: center;
+	position: relative;	
+}
+.wrapper nav label{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: normal;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	border-radius: 22px;
+	margin: 0 5px;
+	padding: 5px;
+ }
+.wrapper nav i{
+	font-size: 30px;
+ }
+.contact i{
+    margin-left: 10px;
+}
+.about i{
+    margin-left: 15px;
+}
+.wrapper nav h4{
+    margin-left: 15px;
+	font-size: 30x;
+}
+.content i{
+	margin-left: 15px;
+    font-size: 30px;
+}
+.content h4{
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 5px;
+	color: rgb(255, 255, 255);
+}
+ .wrapper nav :hover{
+ 	background: #ffffff93;
+}
+.wrapper nav .slider{
+	position: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	border-radius: 5px;
+	background: #eeeeee;
+	transition: all 0.3s ease;
+	}
+	input[type="radio"]{
+	display: none;
+}
+section .content{
+	display: none;
+}
+#about:checked ~ nav .slider{
+  left: 50%;
+}
+#contact:checked ~ nav label.contact,
+#about:checked ~ nav label.about{
+   justify-content: normal;
+   align-items: center;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+   border-left: 1px solid  rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   text-decoration: none;
+   background-color: rgba(0, 0, 0, 0.555);
+}
+#contact:checked ~ section .content-1,
+#about:checked ~ section .content-2{
+	display: block;
+	position: absolute;
+	top: 10px; right: 500px;
+}
+.tag {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	align-items: center;
+	justify-content: normal;
+	z-index: 0;
+	max-width: 500px;
+	margin-top: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	border-left: 1px solid  rgba(255, 255, 255, 0);
+	border-radius: 15px;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.555);
+	padding: 5px;
+}
+.img-zalo {
+	max-width:34px;
+    max-height:34px;
+    padding: 0px;
+    margin-left: 12px;
+    margin-right: 0px;
+    text-align: center;
+	background-color: white;
+}
+.content .tag:hover{
+	background-color: #797777;
+}
+
+.header h3:hover{
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0);
+}
+#footer{
+	position: end;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: start;
+}
